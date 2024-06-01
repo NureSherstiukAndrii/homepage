@@ -31,7 +31,7 @@ body {
 .fv {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
 }
 
 .resume {
@@ -165,6 +165,7 @@ body {
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+    margin: 10px 0;
 }
 
 .experiences {
@@ -211,9 +212,16 @@ body {
     margin-bottom: 10px;
 }
 
+.experiences__company-project-technologies{
+    color: #5c5c62;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
 }
 
 .additional-info {
@@ -228,6 +236,10 @@ body {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
+}
+
+.additional-info__education-university{
+    margin: 20px 0;
 }
 
 .additional-info__education-university-durability {
