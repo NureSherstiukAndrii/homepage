@@ -165,6 +165,7 @@ body {
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+    margin: 10px 0;
 }
 
 .experiences {
@@ -211,9 +212,16 @@ body {
     margin-bottom: 10px;
 }
 
+.experiences__company-project-technologies{
+    color: #5c5c62;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
 }
 
 .additional-info {
@@ -228,6 +236,10 @@ body {
     color: var(--secondary-text-color);
     text-align: left;
     margin-bottom: 20px;
+}
+
+.additional-info__education-university{
+    margin: 25px 0;
 }
 
 .additional-info__education-university-durability {
@@ -259,4 +271,87 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.timeline {
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.timeline__header {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.timeline-item__content{
+    padding-top: 20px;
+    max-height: 0;
+    transition: max-height 0.52s ease-out;
+    overflow: hidden;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item__content__link{
+    background: none;
+    color: #ff9a00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#toggleButton, #toggleCryCatButton{
+    background: none;
+    color: #ff9a00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.timeline__list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.timeline-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.timeline-item__title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.active ~ .timeline-item__content {
+    transition: max-height 0.50s ease-in;
+    max-height: 600px;
+}
+.active .close-open {
+    transform: rotate(180deg);
+}
+
+#imageContainer, #imageCryCatContainer{
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+#imageContainer > img, #imageCryCatContainer > img {
+    max-width: 100%;
+}
+
+.cat-image{
+    width: 100px;
 }
