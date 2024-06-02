@@ -259,6 +259,21 @@ body {
     color: var(--secondary-text-color);
 }
 
+.additional-info__hobbies{
+    margin-bottom: 20px;
+}
+
+.additional-info__hobbies-header {
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__hobbies-item{
+    margin: 20px 0;
+    color: var(--secondary-text-color);
+}
+
 .additional-info__languages {
     margin-bottom: 20px;
 }
